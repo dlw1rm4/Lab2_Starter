@@ -62,6 +62,10 @@
                 <video width="640" height="360" controls preload="metadata">
                     <source src="singleladies_video.mp4" type="video/mp4">
                 </video>
+                <details>
+                    <summary>Click to see my deepest, darkest secret</summary>
+                    <img src="404error.jpg" alt="error" width="200" height="200">
+                </details>
                 <h3>Attendance List:</h3>
                 <h3>Agenda:</h3>
                 <h3>Meeting Notes:</h3>
@@ -91,10 +95,83 @@
             </section>
             <br>
         </main>
+        <section id="add-suggestions">
+            <h2>Missing something? Suggest something:</h2>
+            <form>
+                <fieldset>
+                    <h3>Issue:</h3>
+                    <input list="issue" id="issue-input" name="issue_category" placeholder="Select or type...">
+                    <datalist id="issue">
+                        <option value="Add meeting note">
+                        <option value="Incorrect attendance record">
+                        <option value="Missing meeting notes/content">
+                        <option value="Other">
+                    </datalist>
+                    <p>If other, please explain: </p>
+                    <input type="text" id="other-issue" placeholder="Type here">
+
+                    <p>What week does this apply to?</p>
+                    <input type="radio" id="week1-radio" name="week" value="1">
+                    <label for="week1-radio">Week 1</label>
+                    <input type="radio" id="week2-radio" name="week" value="2">
+                    <label for="week2-radio">Week 2</label>
+                    <input type="radio" id="week3-radio" name="week" value="3">
+                    <label for="week3-radio">Week 3</label>
+                    <input type="radio" id="week4-radio" name="week" value="4">
+                    <label for="week4-radio">Week 4</label>
+                    <input type="radio" id="week5-radio" name="week" value="5">
+                    <label for="week5-radio">Week 5</label>
+                    <input type="radio" id="week6-radio" name="week" value="6">
+                    <label for="week6-radio">Week 6</label>
+                    <input type="radio" id="week7-radio" name="week" value="7">
+                    <label for="week7-radio">Week 7</label>
+                    <input type="radio" id="week8-radio" name="week" value="8">
+                    <label for="week8-radio">Week 8</label>
+                    <input type="radio" id="week9-radio" name="week" value="9">
+                    <label for="week9-radio">Week 9</label>
+                    <input type="radio" id="week10-radio" name="week" value="10">
+                    <label for="week10-radio">Week 10</label>
+                    <input type="radio" id="na" name="week" value="0">
+                    <label for="na">N/A</label>
+
+                    <p>What day of the week does this apply to?</p>
+                    <input type="checkbox" id="monday">
+                    <label for="monday">Monday</label>
+                    <input type="checkbox" id="tuesday">
+                    <label for="tuesday">Tuesday</label>
+                    <input type="checkbox" id="wednesday">
+                    <label for="wednesday">Wednesday</label>
+                    <input type="checkbox" id="thursday">
+                    <label for="thursday">Thursday</label>
+                    <input type="checkbox" id="friday">
+                    <label for="friday">Friday</label>
+                    <input type="checkbox" id="saturday">
+                    <label for="saturday">Saturday</label>
+                    <input type="checkbox" id="sunday">
+                    <label for="sunday">Sunday</label>
+
+                    <p>What date was this filled out?</p>
+                    <input type="date">
+
+                    <p>Who is filling out this form?</p>
+                    <select id="name" name="first_name">
+                        <option value="kaitlyn">Kaitlyn</option>
+                        <option value="allison">Allison</option>
+                        <option value="rena">Rena</option>
+                    </select>
+
+                    <p>Please describe the issue:</p>
+                    <textarea></textarea>
+
+                    <br>
+                    <button id="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            <a href="#top">
+                <button>Click here to go back to the top</button>
+            </a>
+        </footer>
     </body>
-    <footer>
-        <a href="#top">
-            <button>Click here to go back to the top</button>
-        </a>
-    </footer>
 </html>
